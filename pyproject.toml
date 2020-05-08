@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "flask-pytest-demo"
+version = "0.1.0"
+description = "flask testcase with pytest, demo."
+authors = ["Yansy <yansiyu.old.dog@hotmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+flask = "=1.1.1"
+flask_sqlalchemy = "^2.4"
+flask-login = "^0.5.0"
+
+[tool.poetry.dev-dependencies]
+pytest-flask = "=1.0.0" # support client like request
+pytest-mock = "=3.1.0" # mock database
+pytest-xdist = "^1.32" # parallel running tests
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
